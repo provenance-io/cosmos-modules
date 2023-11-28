@@ -1,21 +1,57 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+.DS_Store
+bin/
+.gradle/
+build/
+config/
+!cmd/provenanced/config/
+data/
+.idea/
+*.swp
+utils/
+!cmd/dbmigrate/utils
+.blockade
+blockade.yaml
+*.sock
+.provenance
+.provenanced
+keyring-*
+vendor/
+*.account
+.go.mod.bak
 
-# Test binary, built with `go test -c`
-*.test
+# VS Code
+.history/
+.vscode/
+__debug_bin
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# Eclipse
+.project
+.classpath
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
+# Intellij
+out/
+.settings/
+profile.iml
+profile.ipr
+profile.iws
+/.datastore
+*.iml
+*.ipr
+*.iws
 
-# Go workspace file
-go.work
+# Tools make target marker
+tools-stamp
+tmp-swagger-gen
+proto-tools-stamp
+
+#emacs tmp files
+.#*
+
+#direnv setup
+.envrc
+
+# proto generated files
+proto/gen/
+
+# act (local GitHub workflow runner: https://github.com/nektos/act)
+.secrets
